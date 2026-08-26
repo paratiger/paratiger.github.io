@@ -1,134 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alan Masterson">
-    <meta name="author" content="Alan Masterson">
-
-    <title>Alan Masterson</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Fonts -->
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom Theme CSS -->
-    <link href="css/application.css" rel="stylesheet">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alan Masterson is a technical director, web developer and ultra runner based in Glasgow.">
+  <meta name="theme-color" content="#264f46">
+  <meta property="og:title" content="Alan Masterson">
+  <meta property="og:description" content="Technology, trails and long miles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.paratiger.co.uk/">
+  <title>Alan Masterson | Technology, trails and long miles</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260826">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260826">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=20260826">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=20260826">
+  <link rel="preload" href="img/hero-ultra-finish.webp?v=20260826" as="image">
+  <link rel="stylesheet" href="css/application.css?v=20260826">
 </head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">
-                    <span class="light">Alan</span> Masterson
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#paragliding">Paragliding</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Alan Masterson, home">Alan <span>Masterson</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span></span><span></span>
+    </button>
+    <nav id="site-navigation" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#outdoors">Outdoors</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
-    <section id="home" class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Alan Masterson</h1>
-                        <p class="intro-text">Paraglider pilot, mountain biker, web developer, rugby minis coach, technical director.</p>
-                        <div class="page-scroll">
-                            <a href="#about" class="btn btn-circle">
-                                <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Hello, I'm Alan</p>
+        <h1 id="hero-title">Technology, trails and<br>long miles.</h1>
+        <p class="hero-intro">Technical director, web developer and ultra runner based near Glasgow.</p>
+        <a class="button button-light" href="#about">A little more about me <span aria-hidden="true">↓</span></a>
+      </div>
     </section>
 
-    <section id="about" class="intro container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Me</h2>
-                <p>I am a physics graduate with a passion for whisky and paragliding.</p>
-                <p>During office hours you can find me at <a href="https://www.tictocdigital.co.uk/">tictoc digital</a> in Glasgow where I am the technical director.</p>
-                <p>I am also a rugby fan, supporting Scotland and the Glasgow Warriors and coaching the Birkmyre minis.</p>
-            </div>
-        </div>
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">A little about me</p>
+        <h2 id="about-title">Curious by nature,<br>practical by habit.</h2>
+      </div>
+      <div class="prose">
+        <p>I'm a physics graduate, technical director and web developer at <a class="inline-link" href="https://www.tictocdigital.co.uk/">tictoc digital</a>. I enjoy making digital products clearer, more useful and more reliable - and working with good people to get there.</p>
+        <p>My route into digital started in computer-aided engineering. That engineering mindset still shapes how I work: stay curious, understand the detail and build things that last.</p>
+        <p>Away from a screen, I'm usually on a trail. Ultra running brings together the quiet focus, big landscapes and good company that make a long day outside worthwhile.</p>
+      </div>
     </section>
 
-    <section id="paragliding" class="intro content-section text-center">
-        <div class="paragliding-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Paragliding</h2>
-                    <p>In the summer of 1991 I found myself learning to paraglide in the Yorkshire Dales.</p>
-                    <p>Since that first flight I have been hooked and have had some amazing adventures flying the mountains of Scotland.</p>
-                    <p>I'm also the moderator of one of the largest collection of paragliding videos on the internet.</p>
-                    <ul class="list-inline banner-social-buttons">
-                      <li><a href="https://twitter.com/paraglidevideos" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                      </li>
-                      <li><a href="https://vimeo.com/paragliding" class="btn btn-default btn-lg"><i class="fa fa-vimeo-square fa-fw"></i> <span class="network-name">Vimeo</span></a>
-                      </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <section class="section outdoors" id="outdoors" aria-labelledby="outdoors-title">
+      <div class="section-heading">
+        <p class="eyebrow">Outside</p>
+        <h2 id="outdoors-title">Long miles, open places.</h2>
+      </div>
+      <div class="pursuits">
+        <article class="pursuit pursuit-featured">
+          <p class="pursuit-number" aria-hidden="true">01</p>
+          <h3>Ultra running</h3>
+          <p>Long-distance trail running and ultra marathons are my current challenge: steady progress, big landscapes and plenty of time to think. The best days involve a good route, a long climb and nowhere particular to be for a while.</p>
+        </article>
+        <article class="pursuit">
+          <p class="pursuit-number" aria-hidden="true">02</p>
+          <h3>Paragliding</h3>
+          <p>Paragliding became another chapter in a long-standing love of the hills. I learned to fly in the Yorkshire Dales in 1991 and spent many memorable days flying in the mountains of Scotland.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="contact" class="intro container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Me</h2>
-                <p>You can find me on one of the following sites</p>
-                <ul class="list-inline banner-social-buttons">
-                    <li><a href="https://twitter.com/paratiger" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li><a href="https://facebook.com/paratiger" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/alanmasterson" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <section class="section community" aria-labelledby="community-title">
+      <div>
+        <p class="eyebrow">Community</p>
+        <h2 id="community-title">Passing it on.</h2>
+      </div>
+      <div class="prose">
+        <p>I previously coached mini rugby at Birkmyre, helping young players build confidence, learn the game and enjoy being part of a team. I'm still a rugby fan, following Scotland and Glasgow Warriors.</p>
+      </div>
     </section>
 
-    <!-- Core JavaScript Files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/application.js"></script>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">Keep in touch</p>
+      <h2 id="contact-title">Say hello.</h2>
+      <p>Find me online for work, code and the occasional view from a hill.</p>
+      <ul class="social-links" aria-label="Alan's online profiles">
+        <li><a href="https://www.linkedin.com/in/alanmasterson">LinkedIn</a></li>
+        <li><a href="https://www.strava.com/athletes/alan_masterson">Strava</a></li>
+        <li><a href="https://github.com/paratiger">GitHub</a></li>
+        <li><a href="https://twitter.com/paratiger">X</a></li>
+      </ul>
+    </section>
+  </main>
 
+  <footer>
+    <p>© <span id="year">2026</span> Alan Masterson</p>
+    <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <script src="js/application.js?v=20260826"></script>
 </body>
-
 </html>

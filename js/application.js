@@ -1,23 +1,18 @@
-//jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
+const menuButton = document.querySelector(".menu-toggle");
+const navigation = document.querySelector("#site-navigation");
+const year = document.querySelector("#year");
+
+year.textContent = new Date().getFullYear();
+
+menuButton.addEventListener("click", () => {
+  const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+  menuButton.setAttribute("aria-expanded", String(!isOpen));
+  navigation.classList.toggle("is-open", !isOpen);
 });
 
-//jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('.page-scroll a').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
+navigation.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    menuButton.setAttribute("aria-expanded", "false");
+    navigation.classList.remove("is-open");
+  });
 });
-
-$('.nav li a').on('click',function(){
-    $('.navbar-collapse.in').collapse('hide');
-})
